@@ -42,7 +42,7 @@ MODEL_DICT = {
 
 def model_predict(img_path, model):
     img = image.load_img(img_path, grayscale=False, target_size=(64, 64))
-    show_img = image.load_img(img_path, grayscale=False, target_size=(64, 64))
+    #show_img = image.load_img(img_path, grayscale=False, target_size=(64, 64))
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x = np.array(x, 'float32')
